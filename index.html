@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tempConv</title>
+</head>
+<body>
+    <form id="tempform" onsubmit="convertTemp(); return false">
+        <label id="lbl">Please enter the temperature you'd like to convert:</label>
+        <br/>
+        <input type="number" name="temp" id="temp">
+        <select name="unitselect" id="unitselect">
+            <option value="cel">°Celcius</option>
+            <option value="fahr">°Fahrenheit</option>
+        </select>
+        <br/>
+
+        <input type="submit" name="temp" id="submit">
+        <br/>
+        <span id="resultContainer"></span>
+    </form>
+    <Script src="script.js"></Script>
+</body>
+</html>
